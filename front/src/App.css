@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.header{
+  height:6vh ;
+  background-color: #305F72;
+  color: white;
+  font-family: 'audiowide',serif;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 5vmin;
+}
+
+.container{
+  width:80%;
+  padding:2px;
+  margin:0 auto
+}
+.card{
+  padding: 1%;
+  flex: 1 0 50%;
+}
+
