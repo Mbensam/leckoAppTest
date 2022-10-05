@@ -38,7 +38,7 @@ public class GraphService {
         this.mailsRepository = mailsRepository;
         ensureGraphForAppOnlyAuth();
         ow.registerModule(new JavaTimeModule());
-        //initMails();
+        initMails();
     }
 
     private void ensureGraphForAppOnlyAuth() throws Exception {
