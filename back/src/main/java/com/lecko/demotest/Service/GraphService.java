@@ -93,10 +93,10 @@ public class GraphService {
             while (!users.getCurrentPage().isEmpty()) {
                 for (User user : users.getCurrentPage()) {
                     try {
+                      if(user.id !=null){
                         MessageCollectionPage messages = getMessages(user);
                         while (!messages.getCurrentPage().isEmpty()) {
                             for (Message message : messages.getCurrentPage()) {
-                                System.out.println("Messsages" + message);
                                 List<String> recipients = new ArrayList<>();
                                 if (message.toRecipients != null) {
                                     for (Recipient rec : message.toRecipients) {
@@ -120,6 +120,7 @@ public class GraphService {
                                 break;
                             }
                         }
+                      }      
                     } catch (Exception e) {
                         logger.error("Error while loading messages " + e);
 
